@@ -52,6 +52,10 @@ def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
 
+def relu(z):
+    return max(0.0, z)
+
+
 def feedforward_nn(epochs, x, y):
     n_in = 1
     n_out = 1
